@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My CRUD Journal</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gaegu" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+    <div class="dashboard">
+        <div class="dashboard__top">
+            <h2 class="dashboard__top-title">Yamo's Journal</h2>
+            <img src="img/angle-down-solid.svg" alt="Angle Down" class="icon-arrowdown">
+        </div>
+
+        <div class="dashboard__search">
+            <input type="text" placeholder="Search journal..." class="dashboard__search-input">
+            <img src="img/cog-solid.svg" alt="Setting Icon" class="icon-set">
+        </div>
+
+        <ul class="dashboard__entrymenu">
+            <li class="dashboard__entrymenu-item"><img src="img/plus-circle-solid.svg" alt="Plus Circle" class="icon-plus-circle">
+                New Entry</li>
+            <li class="dashboard__entrymenu-item">
+                <img src="img/list-solid.svg" alt="List Icon" class="icon-list">
+                View All Entries</li>
+            <li class="dashboard__entrymenu-item"><img src="img/star-solid.svg" alt="Star Icon" class="icon-star">
+                View Starred Entries</li>
+        </ul>
+        <ul class="dashboard__entries">
+            <!-- <li class="dashboard__entries-item"><p class="dashboard__entries-item--title">Things to Improve</p>
+                <div class="date">
+                        <img src="img/calendar-solid.svg" alt="Calendar Icon" class="icon-calendar"> <p class="dashboard__entries-item--date">Thu. 7/19/2018</p>
+                    </div>
+        </li>
+            <li class="dashboard__entries-item"><p class="dashboard__entries-item--title">Quick Thoughts</p>
+                <div class="date">
+                        <img src="img/calendar-solid.svg" alt="Calendar Icon" class="icon-calendar"> <p class="dashboard__entries-item--date">Thu. 7/19/2018</p>
+                    </div>
+            </li>
+                <li class="dashboard__entries-item"><p class="dashboard__entries-item--title">Why I'm Writing</p>
+                    <div class="date">
+                        <img src="img/calendar-solid.svg" alt="Calendar Icon" class="icon-calendar"> <p class="dashboard__entries-item--date">Thu. 7/19/2018</p>
+                    </div>
+                </li> -->
+        </ul>
+    </div>
+        <div class="display-message">
+            <h2 class="display-message__title">Entry created!</h2>
+        </div>
+
+    <nav class="top-nav">
+        <div class="top-nav__icons">
+            <img src="img/bars-solid.svg" alt="Bars Icon" class="icon-bar">
+            <img src="img/home-solid.svg" alt="Home Icon" class="icon-home">
+        </div>
+
+        <h1 class="top-nav__title">My Journal</h1>
+        <div class="top-nav__menu">
+            <a href="#" class="top-nav__probtn">Go PRO</a>
+            <a href="#" class="top-nav__userbtn">Yamo
+                <img src="img/sort-down-solid.svg" alt="Sort Down Icon" class="icon-sort-down">
+            </a>
+        </div>
+    </nav>
+
+    <div class="entryarea">
+        <div class="entryarea__box">
+            <input type="text" class="entryarea__box-title" placeholder="Entry Title">
+            <div class="entryarea__box-date">
+                <div class="date">
+                    <img src="img/calendar-solid.svg" alt="Calendar Icon" class="icon-calendar">
+                    <p class="entryarea__box-date--currentdate">Sun. 8/5/2018</p>
+
+                </div>
+                <div class="icons">
+                    <img src="img/trash-alt-regular.svg" alt="TrashIcon" class="icon-trash">
+                    <a href="#" class="delete-btn">Delete</a>
+                    <img src="img/lightbulb-regular.svg" alt="Lightbulb Icon" class="icon-lightbulb">
+                    <img src="img/font-solid.svg" alt="Font Icon" class="icon-font">
+                    
+                </div>
+            </div>
+            <textarea name="entryarea" id="area" cols="70" rows="16" class="entryarea__box-entryfield" placeholder="Your entry here"></textarea>
+            <a href="#" class="entryarea__box-savebtn">Save now</a>
+            <a href="#" class="entryarea__box-updatebtn">Update now</a>
+        </div>
+    </div>
+</div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
